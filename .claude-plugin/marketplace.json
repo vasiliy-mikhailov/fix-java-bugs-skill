@@ -1,0 +1,9 @@
+{
+  "name": "fix-java-bugs",
+  "version": "0.1.0",
+  "description": "Portable Agent Skills to find and fix real bugs in a Java (Maven/Gradle) file: prove each bug with a test that fails on the current code, then fix the root cause so it passes (never a workaround), under the JDK the project actually needs.",
+  "author": { "name": "Vasiliy Mikhailov", "url": "https://github.com/vasiliy-mikhailov" },
+  "license": "MIT",
+  "homepage": "https://github.com/vasiliy-mikhailov/fix-java-bugs-skill",
+  "keywords": ["java","maven","gradle","bug-fixing","code-review","testing","jdk","junit","regression-test","root-cause"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "fix-java-bugs",
+  "owner": { "name": "Vasiliy Mikhailov", "url": "https://github.com/vasiliy-mikhailov" },
+  "metadata": {
+    "description": "Portable Agent Skills that find and fix real bugs in a Java (Maven/Gradle) file: detect the JDK the project needs, read one source file, prove each suspected bug with a test that FAILS on the current code, then fix the ROOT CAUSE so the test passes (never a workaround), and score the fix+test against a pure-LLM mergeability rubric (line-weighted, no runtime required) so the change is clean enough to upstream.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "fix-java-bugs",
+      "source": "./",
+      "description": "Detect the project Java version, then find and fix real bugs one file at a time — each proven by a failing regression test and fixed at the root cause, passing a pure-LLM mergeability rubric (standard tools only, no runtime dependency).",
+      "strict": false,
+      "skills": ["./skills/detect-java-version", "./skills/detect-unit-testing-framework", "./skills/fix-java-bugs"]
+    }
+  ]
+}
